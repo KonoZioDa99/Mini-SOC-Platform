@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px; /* Empêche le dépassement horizontal */
+            border-radius: 8px;
+            text-align: center;
+            box-sizing: border-box; /* Inclut padding et bordures dans les dimensions */
+        }
+
+        .signup-container h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .inputbox {
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .inputbox input {
+            width: 100%;
+            padding: 12px 20px;
+            padding-left: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+            box-sizing: border-box; /* Empêche le débordement horizontal */
+        }
+
+        .inputbox input:focus {
+            border-color: #5f9ea0;
+        }
+
+        .inputbox ion-icon {
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            font-size: 20px;
+            color: #888;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #5f9ea0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            box-sizing: border-box; /* Empêche le débordement horizontal */
+        }
+
+        button:hover {
+            background-color: #4e8e8b;
+        }
+
+        .register {
+            margin-top: 15px;
+        }
+
+        .register a {
+            color: #5f9ea0;
+            text-decoration: none;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+    <h1>Sign Up</h1>
+
+    <form action="/req/signup" method="post">
+        <div class="inputbox">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" id="username" name="username" placeholder="Name" required>
+        </div>
+
+        <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" id="passwordcon" name="passwordcon" placeholder="Confirm Password" required>
+        </div>
+
+        <button id="submit" type="submit">Sign Up</button>
+        <div id="message" style="color:red; margin-bottom: 10px;"></div>
+        <div class="register">
+            <p>Already have an account? <a href="req/login">Log In</a></p>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const messageBox = document.getElementById("message");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Empêche l'envoi natif
+
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("passwordcon").value;
+
+            if (password !== confirmPassword) {
+                messageBox.textContent = "Passwords do not match.";
+                return;
+            }
+
+            const userData = {
+                username,
+                email,
+                password
+            };
+
+            fetch("/req/signup", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(userData)
+            })
+            .then(async response => {
+                if (response.ok) {
+                    // Redirection manuelle si succès (201)
+                    window.location.href = "/req/login";
+                } else {
+                    const errorText = await response.text();
+                    messageBox.textContent = errorText;
+                }
+            })
+            .catch(error => {
+                messageBox.textContent = "An error occurred. Please try again.";
+                console.error("Signup error:", error);
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>

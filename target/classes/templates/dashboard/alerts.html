@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniSOC - Alertes</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6f9;
+        }
+
+        header {
+            background-color: #1f4e79;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 2rem auto;
+            max-width: 1000px;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #1f4e79;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .severity {
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: black;
+        }
+
+        .LOW {
+            background-color: #4caf50;
+        }
+
+        .MEDIUM {
+            background-color: #ff9800;
+        }
+
+        .HIGH {
+            background-color: #f44336;
+        }
+
+        .CRITICAL {
+            background-color: #8b0000;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>
+        <a th:href="@{/index}"><span style="color: white;">MiniSOC</span></a>
+    </h1>
+    <nav>
+        <a th:href="@{/dashboard/alerts}">Alertes</a>
+        <a th:href="@{/dashboard/logs}">Logs</a>
+    </nav>
+</header>
+
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Catégorie</th>
+            <th>Source</th>
+            <th>Message</th>
+            <th>Gravité</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="alert : ${alerts}">
+            <td th:text="${#dates.format(alert.timestamp, 'yyyy-MM-dd HH:mm:ss')}"></td>
+            <td th:text="${alert.category}"></td>
+            <td th:text="${alert.source}"></td>
+            <td th:text="${alert.msgAlert}"></td>
+            <td>
+                <span th:text="${alert.severity}" th:class="'severity ' + ${alert.severity}"></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+</body>
+</html>

