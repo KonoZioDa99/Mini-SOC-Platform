@@ -13,7 +13,7 @@
 
 The **Mini-SOC Platform** is a custom-built Security Operations Center simulation developed using the Spring Boot framework. The application is designed to ingest raw security logs, parse them into structured data, and identify malicious activities such as brute-force attacks. It features a secure administrative dashboard backed by JWT authentication and a PostgreSQL database for persistent log and alert storage.
 
-**📄 Full Documentation:** [Download the Project Report (PDF)](./Rapport_Mini_SOC.pdf)
+**📄 Full Documentation:** [Download the Project Report (PDF)](https://github.com/KonoZioDa99/Mini-SOC-Platform/blob/main/Rapport%20Mini_SOC.pdf)
 
 ---
 
